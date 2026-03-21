@@ -1,3 +1,15 @@
+---
+title: Grad COT
+emoji: 🧠
+colorFrom: blue
+colorTo: indigo
+sdk: gradio
+sdk_version: "6.9.0"
+python_version: "3.13"
+app_file: app.py
+pinned: false
+---
+
 # Grad COT
 
 Grad COT is a lightweight Gradio demo for running a reasoning-focused causal language model in a Hugging Face Space.
