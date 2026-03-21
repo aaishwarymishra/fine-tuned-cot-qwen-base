@@ -1,9 +1,18 @@
 import gradio as gr
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
+from peft import PeftModel
 
-tokenizer = AutoTokenizer.from_pretrained("Blankyy/reasoning-math-model")
-model = AutoModelForCausalLM.from_pretrained("Blankyy/reasoning-math-model")
+model_id = "Blankyy/reasoning-math-model"
+base_model_id = "unsloth/Qwen3-0.6B-Base-bnb-4bit"
+
+tokenizer = AutoTokenizer.from_pretrained(model_id)
+
+base_model = AutoModelForCausalLM.from_pretrained(
+    base_model_id, torch_dtype="auto", device_map="auto"
+)
+# Load your fine-tuned adapters on top
+model = PeftModel.from_pretrained(base_model, model_id)
 
 
 def respond(message):
