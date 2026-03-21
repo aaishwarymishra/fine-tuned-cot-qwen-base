@@ -1,9 +1,11 @@
 [project]
 name = "grad-cot"
 version = "0.1.0"
-description = "Add your description here"
+description = "A Gradio demo for reasoning model inference"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "gradio>=6.9.0",
+    "torch",
+    "transformers",
 ]
