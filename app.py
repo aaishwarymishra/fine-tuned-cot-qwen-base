@@ -73,7 +73,7 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
             placeholder="Type a message and press Enter...",
             label="Input",
             scale=3,
-            value="If my age will be 3 times my age 5 years ago after 10 years, how old am I now?",
+            value="If my sister's age is half my age and I will be 25 in 5 years, my sister's current age is?",
         )
     chain_of_thoughts = gr.Textbox(
         label="Chain of Thoughts",
