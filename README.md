@@ -1,6 +1,6 @@
 ---
-title: Grad COT
-emoji: 🧠
+title: Chain of Thoughts Reasoning Demo
+emoji: 🤗
 colorFrom: blue
 colorTo: indigo
 sdk: gradio
@@ -10,22 +10,23 @@ app_file: app.py
 pinned: false
 ---
 
-# Grad COT
+# Chain of Thoughts Reasoning Demo
 
-Grad COT is a lightweight Gradio demo for running a reasoning-focused causal language model in a Hugging Face Space.
+Chain of Thoughts Reasoning Demo is a lightweight Gradio demo for running a reasoning-focused causal language model in a Hugging Face Space.
 
 ## Overview
 
 - Single-text input Gradio app
 - Displays the final answer and the extracted chain of thought separately
 - Loads the model from Hugging Face Hub: `Blankyy/reasoning-math-model`
+- Hugging Face space link: https://huggingface.co/spaces/Blankyy/fine-tuned-cot-qwen-base
 
 ## Repository structure
 
 - `app.py` — Gradio app entry point
 - `pyproject.toml` — Python project metadata and dependencies
 - `README.md` — project overview and deployment notes
-
+- `cot_reasoning.ipynb` - Notebook used for training the model.
 ## Local setup
 
 1. Create and activate a Python environment.
