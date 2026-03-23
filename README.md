@@ -13,6 +13,7 @@ pinned: false
 # Chain of Thoughts Reasoning Demo
 
 Chain of Thoughts Reasoning Demo is a lightweight Gradio demo for running a reasoning-focused causal language model in a Hugging Face Space.
+Qwen3-0.6-Base is supervised fine-tuned on a modified openai/gsm8k dataset, and the demo allows users to interact with the model by inputting prompts and receiving both the final answer and the extracted chain of thought.
 
 ## Overview
 

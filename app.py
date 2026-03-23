@@ -1,3 +1,4 @@
+from rich.progress import examples
 import gradio as gr
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -73,6 +74,7 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
             placeholder="Type a message and press Enter...",
             label="Input",
             scale=3,
+            value="If my age will be 3 times my age 5 years ago after 10 years, how old am I now?",
         )
     chain_of_thoughts = gr.Textbox(
         label="Chain of Thoughts",
