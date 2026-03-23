@@ -20,7 +20,7 @@ Qwen3-0.6-Base is supervised fine-tuned on a modified openai/gsm8k dataset, and 
 - Single-text input Gradio app
 - Displays the final answer and the extracted chain of thought separately
 - Loads the model from Hugging Face Hub: `Blankyy/reasoning-math-model`
-- Hugging Face space link: https://huggingface.co/spaces/Blankyy/fine-tuned-cot-qwen-base
+- [Hugging Face space link](https://huggingface.co/spaces/Blankyy/fine-tuned-cot-qwen-base)
 
 ## Repository structure
 
