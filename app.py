@@ -61,8 +61,10 @@ def respond(message):
 with gr.Blocks(theme=gr.themes.Soft()) as demo:
     gr.Markdown(
         """
-        # Grad COT
-        A clean single-input demo.
+        # Chain of Thoughts Reasoning Demo
+        A demo for Chain of Thoughts reasoning model trained on grade school math problems.
+        Model used was fine-tuned on top of Qwen3-0.6B-Base-bnb-4bit using PEFT.
+        The model is trained to generate a chain of thoughts before giving the final answer, which can be helpful for complex reasoning tasks.
         """
     )
 
