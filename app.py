@@ -1,4 +1,3 @@
-from rich.progress import examples
 import gradio as gr
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
